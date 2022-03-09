@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+    <!-- font-start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-end -->
+
+    <!-- CSS-start -->
+    <link rel="icon" href="assets/images/favicon.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- css-end -->
+    <!-- script-start -->
+    <script src="script.js" defer></script>
+    <!-- script-end -->
+  </head>
+  <body>
+    <!-- header-start -->
+    <header>
+      <div class="container">
+        <nav>
+          <h1>Where in the world?</h1>
+          <button type="button" class="dark">
+            <svg
+              class="dark__moon"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              enable-background="new 0 0 512 512"
+            >
+              <g>
+                <path
+                  d="m494.9,331.3c-6.1-6.1-15.3-7.8-23.2-4.2-37.1,17.1-78.3,23.2-119,17.6-117.3-16.3-199.5-125.2-183.3-242.8 3-21.4 9-42.2 18.1-61.6 3.6-7.8 2-17.1-4.1-23.2-6.1-6.1-15.3-7.7-23.2-4.2-43.7,19.4-130.3,81.1-146.5,197.9-25.8,186.5 139,284.9 218.4,289.2 55.7,3.1 189.9,8.1 266.9-145.5 3.8-7.7 2-17.1-4.1-23.2zm-257.2,127.9c-117.3-16.3-199.5-125.2-183.3-242.8 7.6-55 35.5-103.8 77.4-137.7-1.2,5.8-2.2,11.6-3,17.5-27.2,193.6 143,282.8 218.3,289.2 29,2.5 57.9,3.1 86-2.7-46.5,57.2-119.7,87-195.4,76.5z"
+                />
+              </g>
+            </svg>
+            Dark Mode
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- header-end -->
+    <div class="container">
+      <div class="search-wrapper">
+        <input
+          type="text"
+          class="search"
+          placeholder="Search for a country..."
+        />
+        <select name="filter" id="contients">
+          <option value="">Filter by Region</option>
+          <option value="Africa">Africa</option>
+          <option value="America">America</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </div>
+
+      <div class="countries-wrapper"></div>
+    </div>
+  </body>
+</html>
